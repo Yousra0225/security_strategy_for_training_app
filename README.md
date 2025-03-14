@@ -1,3 +1,3 @@
-# Security Strategy for a Training Platform 
+# Security Strategy for pire2pire.com training app 
 ## Author : Yousra Chbib
 ## Introduction
