@@ -19,3 +19,8 @@
 |**SQLi**|*Insérer du code SQL malveillant dans une entrée utilisateur pour manipuler une base de donner  des données malveillantes dans un champ de formulaire pour tromper la base de données et lui faire executer des commandes non prévues*|Envoyer une requête SQL malveillante pour se connecter à un site `Select from users WHERE name'toto' and password ='tutu' OR '1'=1` comme 1=1 est toujours vrais, le site donne accés à tous les comptes|
 |**Local/Remote file inclusion**|*Forcer un site à charger un fichier provient ou bien du serveur lui même ou d'un serveur externe*|Charger un fichier local sensible (mots de passe...) du serveur|
 |**XML External Entity (XXE)**|*exploite une mauvaise configuration du traitement XML pour accéder à des fichiers sensibles du serveur ou exécuter d'autres actions malveillantes.*|Envoyer un fichier XML contenant une entité externe pour que le serveur renvoie le contenu d'un fichier sensible.|
+
+## Régles d'hygiène : 
+1. **Défence  on profondeur** :
+
+![Défence on profondeur](defenceprofondeur.jpeg)
