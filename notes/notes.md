@@ -22,5 +22,6 @@
 
 ## Régles d'hygiène : 
 1. **Défence  on profondeur** :
+*La défense en profondeur repose sur l'utilisation de plusieurs couches de sécurité indépendantes pour protéger un système contre diverses menaces. Chaque composant du système, qu'il s'agisse des serveurs, des applications ou des bases de données, doit intégrer ses propres mécanismes de protection.*
 
 ![Défence on profondeur](defenceprofondeur.jpeg)
