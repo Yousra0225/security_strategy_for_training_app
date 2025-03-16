@@ -21,7 +21,8 @@
 |**XML External Entity (XXE)**|*exploite une mauvaise configuration du traitement XML pour accéder à des fichiers sensibles du serveur ou exécuter d'autres actions malveillantes.*|Envoyer un fichier XML contenant une entité externe pour que le serveur renvoie le contenu d'un fichier sensible.|
 
 ## Régles d'hygiène : 
-1. **Défence  on profondeur** :
-*La défense en profondeur repose sur l'utilisation de plusieurs couches de sécurité indépendantes pour protéger un système contre diverses menaces. Chaque composant du système, qu'il s'agisse des serveurs, des applications ou des bases de données, doit intégrer ses propres mécanismes de protection.*
-
-![Défence on profondeur](defenceprofondeur.jpeg)
+|Principe de sécurité|Description|Exemples|
+|--------------------|-----------|--------|
+|**Défence en Profondeur**|*Utilisation de plusieurs couches de sécurité indépendantes pour protéger un système.*|Ne pas concentrer toutes les mesures de sécurité au point d’entrée, chaque composant doit intégrer ses propres protections.|
+|**Moindre Privilège**|*Limiter les permissions aux seules nécessaires pour minimiser les risques en cas de compromission.*|Définir des rôles précis (lecture seule, écriture…), restreindre les permissions d’accès aux API et aux fichiers système.|
+|**Réduction de la surface d'attaque**|*Ne pas exposer de services, accès ou composants inutiles pour limiter les vulnérabilités.*|Filtrage des ports réseau, désactivation des services non nécessaires, suppression des modules inutiles.|
