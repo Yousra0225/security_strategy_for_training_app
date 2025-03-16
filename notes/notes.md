@@ -37,6 +37,12 @@
 - Empêche les attaques `Man-In-The-Middle`*, où un attaquant pourrait intercepter ou modifier les informations.
 
 ### Bonne Pratiques 
-- Utiliser TLS 1.2 ou 1.3 pour garantir une sécurité optimale.
+- Utiliser `TLS 1.2` ou `1.3` pour garantir une sécurité optimale.
 - Activer `HSTS`* pour forcer l'utilisation de HTTPS et empêcher l'accès en HTTP non sécurisé.
 - Surveiller les `CT`* logs pour détecter et révoquer les certificats frauduleux.
+
+|Termes|Définition|
+|------|----------|
+|**Man-In-The-Middle**|*Une attaque où un attaquant intercepte, modifie ou espionne les communications entre deux parties (par exemple, un utilisateur et un site web) sans qu'elles ne s'en aperçoivent.*|
+|**HSTS (HTTP Strict Transport Security)**|*Une mesure de sécurité qui force les navigateurs à n'utiliser que HTTPS pour se connecter à un site web.*|
+|**CT Logs (Certificate Transparency Logs)**|*Ce sont des registres publics qui enregistrent tous les certificats SSL/TLS délivrés pour un site web. *|
