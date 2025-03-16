@@ -26,3 +26,17 @@
 |**Défence en Profondeur**|*Utilisation de plusieurs couches de sécurité indépendantes pour protéger un système.*|Ne pas concentrer toutes les mesures de sécurité au point d’entrée, chaque composant doit intégrer ses propres protections.|
 |**Moindre Privilège**|*Limiter les permissions aux seules nécessaires pour minimiser les risques en cas de compromission.*|Définir des rôles précis (lecture seule, écriture…), restreindre les permissions d’accès aux API et aux fichiers système.|
 |**Réduction de la surface d'attaque**|*Ne pas exposer de services, accès ou composants inutiles pour limiter les vulnérabilités.*|Filtrage des ports réseau, désactivation des services non nécessaires, suppression des modules inutiles.|
+
+## TLS 
+### C'est quoi ?
+*TLS (Transport Layer Security) est un protocole de sécurité utilisé pour chiffrer les communications entre un serveur et un client.*
+*Lorsque on vois `HTTPS` dans l'URL d'un site, cela signifie que TLS est utilisé pour sécuriser la connexion.*
+
+### Pourquoi l'utiliser ?
+- Protège la confidentialité des données échangées entre le site et l'utilisateur.
+- Empêche les attaques `Man-In-The-Middle`*, où un attaquant pourrait intercepter ou modifier les informations.
+
+### Bonne Pratiques 
+- Utiliser TLS 1.2 ou 1.3 pour garantir une sécurité optimale.
+- Activer `HSTS`* pour forcer l'utilisation de HTTPS et empêcher l'accès en HTTP non sécurisé.
+- Surveiller les `CT`* logs pour détecter et révoquer les certificats frauduleux.
