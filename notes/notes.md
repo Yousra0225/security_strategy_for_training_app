@@ -46,3 +46,15 @@
 |**Man-In-The-Middle**|*Une attaque où un attaquant intercepte, modifie ou espionne les communications entre deux parties (par exemple, un utilisateur et un site web) sans qu'elles ne s'en aperçoivent.*|
 |**HSTS (HTTP Strict Transport Security)**|*Une mesure de sécurité qui force les navigateurs à n'utiliser que HTTPS pour se connecter à un site web.*|
 |**CT Logs (Certificate Transparency Logs)**|*Ce sont des registres publics qui enregistrent tous les certificats SSL/TLS délivrés pour un site web. *|
+
+## Mécanismes de Sécurité Web  
+
+| **Mécanisme de sécurité** |**Explication**|
+|---------------------------|---------------|
+| **Protection contre les vulnérabilités XSS**   | XSS (Cross-Site Scripting) permet à un attaquant d'injecter du code malveillant dans une page web. Pour s'en protéger, on filtre les entrées utilisateur pour éviter l'injection. |
+| **Content Security Policy (CSP)**              | CSP est une politique de sécurité qui permet de contrôler les sources de contenu autorisées (comme les scripts, images, etc.) pour empêcher l'exécution de code malveillant.    |
+| **Referrer-Policy**                            | Referrer-Policy définit quelles informations (comme l'URL complète) sont envoyées dans les en-têtes HTTP lors des navigations, pour protéger la vie privée de l'utilisateur.      |
+| **Web Storage, IndexedDB, Cookies**            | Ces technologies stockent des données côté client. Web Storage et IndexedDB permettent de stocker des informations locales, tandis que les cookies gardent des informations sur l'utilisateur. |
+| **XMLHttpRequest (XHR) et Cross-Origin Resource Sharing (CORS)** | XHR est utilisé pour faire des requêtes HTTP sans recharger la page. CORS est une politique qui définit si un site peut accéder à des ressources d'un autre domaine.            |
+| **HTML5 et JavaScript**                        | HTML5 et JavaScript permettent de créer des pages interactives et dynamiques. Ils sont utilisés dans des applications web modernes, mais doivent être sécurisés pour éviter les attaques. |
+
