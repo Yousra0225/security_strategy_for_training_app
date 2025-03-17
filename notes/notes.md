@@ -48,6 +48,14 @@
 |**CT Logs (Certificate Transparency Logs)**|*Ce sont des registres publics qui enregistrent tous les certificats SSL/TLS délivrés pour un site web. *|
 
 ## Mécanismes de Sécurité Web  
+## Stratégie par défaut : 
+ 
+| Stratégie | Explication  | Pourquoi ? | Exemple  |
+|-----------|--------------|------------|----------|
+| **Same-Origin Policy (SOP)**    | Bloque l’accès aux ressources d’un site par un autre site si leur origine (protocole, domaine, port) est différente. | Empêche les attaques où un site malveillant tenterait de lire des données sensibles depuis un autre site sans autorisation. | Un script sur `malicious.com` ne peut pas accéder aux cookies d'`exemple.com`, sauf si `exemple.com` l’autorise explicitement. |
+| **Cross-Origin Resource Sharing (CORS)** | Permet à un site d’accéder aux ressources d’un autre domaine si ce dernier l’autorise via des en-têtes HTTP. | Contourne les restrictions SOP de manière sécurisée en permettant des communications légitimes entre sites. | Une API sur `api.exemple.com` autorise `www.exemple.com` à récupérer ses données. |
+| **Content Security Policy (CSP)** | Restreint le chargement de scripts, images, styles, etc., pour éviter les attaques XSS et autres injections. | Protège contre l’exécution de scripts malveillants en limitant les sources autorisées à fournir du contenu. | Un site définit empêcher l’exécution de scripts non autorisés. |
+
 
 | **Mécanisme de sécurité** |**Explication**|
 |---------------------------|---------------|
