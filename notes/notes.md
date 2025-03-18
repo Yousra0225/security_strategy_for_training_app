@@ -140,3 +140,17 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
 - **Durée des sessions** : 
 *La durée des sessions authentifiées doit être limitée pour réduire les risques d'exploitation par un attaquant en cas de session compromise.*
 
+## Facteur de connaissance : 
+- Utilisation des phrases de passe : Préférer des phrases de passe longues plutôt que des mots de passe courts. Elles sont souvent plus faciles à mémoriser et plus sécurisées.
+
+- Pas de limite de longueur des mots de passe : Il est recommandé de ne pas imposer de limite maximale pour les mots de passe, mais de limiter leur taille pour éviter des attaques par déni de service.
+
+- Complexité des mots de passe : Imposer des règles sur la complexité des mots de passe (majuscules, chiffres, caractères spéciaux) pour augmenter leur sécurité. Cela protège surtout contre les attaques en ligne.
+
+- Expiration des mots de passe : Ne pas forcer l'expiration des mots de passe pour les comptes non sensibles, mais pour les comptes avec privilèges (administrateurs), il est recommandé de le faire.
+
+- Renouvellement immédiat en cas de compromission : Si un mot de passe est compromis, il doit être changé immédiatement et l’accès aux comptes concernés doit être désactivé.
+
+- Vérification de la robustesse des mots de passe : Mettre en place des contrôles automatisés pour vérifier que les mots de passe respectent les règles de sécurité (pas de mots de passe faibles comme "12345").
+
+- Stockage sécurisé des mots de passe : Il est crucial de stocker les mots de passe de manière sécurisée, par exemple en utilisant un hachage sécurisé.
