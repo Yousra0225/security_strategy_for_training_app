@@ -14,7 +14,7 @@
     - Page de Connexion/inscription
         - Connexion
             1. ![Sécurisation du nom d’utilisateur ](username.md)
-            2. Politique de mots de passe sécurisés
+            2. ![Politique de mots de passe sécurisés](password.md)
         - Inscription
         - Mot de passe oublié
     - Tableau de Bord
@@ -48,23 +48,29 @@
 
 .
 ## Annexes : 
-Bases d'authetification: 
+Bases d'authetification  
 https://laconsole.dev/formations/authentification
 
-Sécurité de connexion: 
+Sécurité de connexion   
 https://www.microsoft.com/fr-fr/security/business/security-101/what-is-login-security
 
-La méthode la plus sécurisée pour se connecter: 
+La méthode la plus sécurisée pour se connecter  
 https://safety.google/intl/fr_fr/authentication/
 
-Sécurité par Mot de Passe: 
+Sécurité par Mot de Passe  
 https://www.proofpoint.com/fr/threat-reference/password-protection
 
-Regex (expression régulière):
+Regex (expression régulière)  
 https://datascientest.com/regex-tout-savoir
 
-Bien gérer son mot de passe: 
+Bien gérer son mot de passe   
 https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe
 
-Créer un mot de passe sécurisé
+Créer un mot de passe sécurisé  
 https://www.economie.gouv.fr/particuliers/creer-mot-passe-securise
+
+Conseils pour créer et gérer les mots de passe  
+https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/technologie/protection-de-la-vie-privee-en-ligne-surveillance-et-temoins/protection-de-la-vie-privee-en-ligne/tips_pw/
+
+Choisir un bon mot de passe  
+https://cri.centrale-med.fr/fr/faq/choisir-un-bon-mot-passe

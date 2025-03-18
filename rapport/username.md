@@ -1,3 +1,4 @@
+# Sécurisation du nom d’utilisateur
 ## Validation des entrées avec des expressions régulières (Regex) :
 *Une expression régulière est une séquence de caractères utilisée pour définir un motif (pattern). Ce motif permet de rechercher, extraire ou modifier des chaînes de caractères spécifiques au sein d’un texte.*  
 `Exemple : La regex \d{5} correspond à une suite de cinq chiffres.`
