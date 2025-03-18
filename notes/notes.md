@@ -75,3 +75,6 @@
 - Sécuriser l'accès aux comptes et systèmes.
 - Limiter les risques de piratage(mots de passe ..).
 - Donner les bonnes pratique pour une authetification robuste.
+1. Authentification et Menaces : 
+    - ID authentification (facteurs pour prouver son identité): Facteur de connaissance (mots de passe..),facteur de possession (smartphone..),facteur inhérent(empreinte digital..)
+        
