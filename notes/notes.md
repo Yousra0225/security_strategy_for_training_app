@@ -106,6 +106,16 @@
 5. Menaces et attaques sur les facteurs de possession
 Les menaces sur les facteurs de possession incluent le vol, la perte, ou la compromission de l'équipement contenant le facteur (ex: carte à puce). Les attaquants cherchent à récupérer des informations sensibles via des attaques par canaux auxiliaires.
 
-6. Menaces et attaques sur les facteurs inhérents
+6. Menaces et attaques sur les facteurs 
 Les facteurs biométriques sont également vulnérables à des attaques visant à usurper l'identité physique de l'utilisateur. Les attaques peuvent inclure la présentation de photos, vidéos préenregistrées, ou encore des moulages d'empreintes digitales.
-    
+
+7. Limite d'authentification par mots de passe
+    - Mémorisation difficile; utilisation de mots simples ou réutilisation.
+    - Faciles à casser (dates, mots du dictionnaire..).
+    - Mots de passe robustes : Longs et complexes mais difficiles à mémoriser.
+    - Coffres-forts de mots de passe : Solutions de stockage sécurisé, mais vulnérables aux attaques par `hameçonnage` et logiciels malveillants (keyloggers).
+    - Si un même mot de passe est utilisé partout, les fuites de bases de données peuvent exposer de nombreux comptes.
+
+8. Protocoles d’authentification forte :
+    - Défi-réponse : Clé secrète + défi variable (ex. Kerberos..).
+    - Résistance aux attaques : écoute clandestine, rejeu, MAN-IN-THE-MIDDLE.
