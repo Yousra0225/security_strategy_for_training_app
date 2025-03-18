@@ -68,6 +68,7 @@
 | **HTML5 et JavaScript**                        | HTML5 et JavaScript permettent de créer des pages interactives et dynamiques. Ils sont utilisés dans des applications web modernes, mais doivent être sécurisés pour éviter les attaques. |
 
 ### Conlusion :
+
 *Ce guide permer de mieux comprendre les différents mécanismes de sécurité à mettre en place pour protéger les applications web. En appliquant des techniques comme la protection contre les attaques XSS, l'utilisation de la CSP, et la gestion des cookies ou du stockage local, on peut renforcer la sécurité des sites. on voit aussi l'importance de mettre en œuvre CORS et la Referrer-Policy pour mieux gérer la confidentialité et l'intégrité des données.Ces mesures doivent être intégrées dès le début du développement pour garantir une sécurité maximale.*
 ----
 
@@ -75,9 +76,30 @@
 - Sécuriser l'accès aux comptes et systèmes.
 - Limiter les risques de piratage(mots de passe ..).
 - Donner les bonnes pratique pour une authetification robuste.
-1. Authentification et Menaces : 
-    - ID authentification (facteurs pour prouver son identité): Facteur de connaissance (mots de passe..),facteur de possession (smartphone..),facteur inhérent(empreinte digital..)
-2. Menaces : 
-    - Vol de mot de passe (hameçonnage, attaques par force brute).
-    - Compromission des bases de données.
-    - Interception des identifiants via des logiciels malveillants.    
+
+![Authentification](authentification.png)
+
+ *les jetons JWT peuvent être chiffrés pour protéger les données sensibles, garantissant ainsi que seuls les destinataires prévus peuvent lire le contenu du jeton .*
+
+1. Authentification: 
+    - Moyens d'authentification: sont des éléments connus ou possédés uniquement par le prouveur,(Mot de passe, Donnée biométrique..)
+
+2. Bonnes pratiques pour les mots de passe :
+    - Minimum 12-14 caractères(Longueur/complexité).
+    - Éviter les mots communs,infos personnelles, ou réutiliser un mot de passe.
+    - Stockage sécurisé (Hachage,coffre-fort(Keepass..), Ne pas forcer le changement fréquent )
+
+3.  Menaces et attaques sur l'authentification : 
+*La menace principale contre l'authentification est `l'usurpation d'identité`, où un attaquant se fait passer pour un utilisateur légitime.*, deux types d'attaquants sont distingués: 
+    - **Attaquant en ligne** : interagit avec le serveur d'authentification pour tenter de retrouver des valeurs secrètes, comme un mot de passe ou une clé privée.
+    - **Attaquant hors ligne** :  accès aux données de l'authentification, comme des empreintes de mots de passe ou une clé publique.
+
+4. Menaces et attaques sur les facteurs de connaissance :
+
+    |Menace|Protection|
+    |-----||----------|
+    | **Attaque par recherche exhaustive** L'attaquant teste toutes les combinaisons possibles de caractères.|Limiter le nombre d'essais|
+    |**Attaque par dictionnaire** L'attaquant teste les mots d'un dictionnaire pour deviner le mot de passe.|Mots de passe robustes, coffre-fort de mots de passe|
+    |**Attaque par tables pré-calculées** (`rainbow tables`) : Les attaquants comparent les empreintes cryptographiques volées avec une empreinte pré-calculée|Utilisation de sel aléatoire long|
+    |**Attaque par ingénierie sociale** : L'attaquant cherche à obtenir des informations sensibles par des moyens détournés, comme l'hameçonnage.|Authentification multifacteur|
+    
