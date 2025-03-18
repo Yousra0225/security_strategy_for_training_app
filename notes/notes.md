@@ -77,4 +77,7 @@
 - Donner les bonnes pratique pour une authetification robuste.
 1. Authentification et Menaces : 
     - ID authentification (facteurs pour prouver son identité): Facteur de connaissance (mots de passe..),facteur de possession (smartphone..),facteur inhérent(empreinte digital..)
-        
+2. Menaces : 
+    - Vol de mot de passe (hameçonnage, attaques par force brute).
+    - Compromission des bases de données.
+    - Interception des identifiants via des logiciels malveillants.    
