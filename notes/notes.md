@@ -154,3 +154,15 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
 - Vérification de la robustesse des mots de passe : Mettre en place des contrôles automatisés pour vérifier que les mots de passe respectent les règles de sécurité (pas de mots de passe faibles comme "12345").
 
 - Stockage sécurisé des mots de passe : Il est crucial de stocker les mots de passe de manière sécurisée, par exemple en utilisant un hachage sécurisé.
+
+## Facteur Inhérent (Biométrie)
+- Avantages :
+    - Simplicité d'utilisation : La biométrie ne nécessite pas de mémorisation de mots de passe, et contrairement aux facteurs de possession, aucun objet physique n'est à conserver.
+    - Authentification directe : Elle permet de vérifier directement l'identité d'un individu via ses caractéristiques uniques (empreintes digitales, visage, voix, etc.), contrairement aux facteurs basés sur la connaissance ou la possession.
+
+- Inconvénients :
+    - Révocation difficile : Si une caractéristique biométrique (ex: l'empreinte digitale) est compromise, il n'est pas possible de la révoquer facilement, contrairement aux mots de passe.
+    - Non-confidentialité : Les caractéristiques biométriques ne sont pas secrètes et ne peuvent pas être protégées comme un mot de passe.
+    - Problèmes de qualité et vieillissement : La qualité de la vérification dépend de la précision des capteurs et peut être affectée par l’âge.
+    - Problèmes de confidentialité : Le stockage des données biométriques sensibles doit être sécurisé, car elles caractérisent de manière unique un individu.
+    - Vulnérabilité à la contrefaçon : Certaines technologies biométriques (reconnaissance faciale, empreintes digitales..) peuvent être sensibles à la *falsification*.
