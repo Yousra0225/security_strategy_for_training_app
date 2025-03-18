@@ -67,9 +67,6 @@
 | **XMLHttpRequest (XHR) et Cross-Origin Resource Sharing (CORS)** | XHR est utilisé pour faire des requêtes HTTP sans recharger la page. CORS est une politique qui définit si un site peut accéder à des ressources d'un autre domaine.            |
 | **HTML5 et JavaScript**                        | HTML5 et JavaScript permettent de créer des pages interactives et dynamiques. Ils sont utilisés dans des applications web modernes, mais doivent être sécurisés pour éviter les attaques. |
 
-### Conlusion :
-
-*Ce guide permer de mieux comprendre les différents mécanismes de sécurité à mettre en place pour protéger les applications web. En appliquant des techniques comme la protection contre les attaques XSS, l'utilisation de la CSP, et la gestion des cookies ou du stockage local, on peut renforcer la sécurité des sites. on voit aussi l'importance de mettre en œuvre CORS et la Referrer-Policy pour mieux gérer la confidentialité et l'intégrité des données.Ces mesures doivent être intégrées dès le début du développement pour garantir une sécurité maximale.*
 ----
 
 ## Authentification et Sécurité des Mots de Passe :
@@ -139,6 +136,8 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
 *Tous les échanges contenant des secrets d'authentification doivent être réalisés via des canaux sécurisés tels que TLS.*
 - **Durée des sessions** : 
 *La durée des sessions authentifiées doit être limitée pour réduire les risques d'exploitation par un attaquant en cas de session compromise.*
+----
+![facteurs](facteurs.png)
 
 ## Facteur de connaissance : 
 - Utilisation des phrases de passe : Préférer des phrases de passe longues plutôt que des mots de passe courts. Elles sont souvent plus faciles à mémoriser et plus sécurisées.
@@ -155,7 +154,7 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
 
 - Stockage sécurisé des mots de passe : Il est crucial de stocker les mots de passe de manière sécurisée, par exemple en utilisant un hachage sécurisé.
 
-## Facteur Inhérent (Biométrie)
+## Facteur Inhérent
 - Avantages :
     - Simplicité d'utilisation : La biométrie ne nécessite pas de mémorisation de mots de passe, et contrairement aux facteurs de possession, aucun objet physique n'est à conserver.
     - Authentification directe : Elle permet de vérifier directement l'identité d'un individu via ses caractéristiques uniques (empreintes digitales, visage, voix, etc.), contrairement aux facteurs basés sur la connaissance ou la possession.
@@ -166,3 +165,16 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
     - Problèmes de qualité et vieillissement : La qualité de la vérification dépend de la précision des capteurs et peut être affectée par l’âge.
     - Problèmes de confidentialité : Le stockage des données biométriques sensibles doit être sécurisé, car elles caractérisent de manière unique un individu.
     - Vulnérabilité à la contrefaçon : Certaines technologies biométriques (reconnaissance faciale, empreintes digitales..) peuvent être sensibles à la *falsification*.
+
+## Facteur de possession
+- Sécurité et protection
+    - Risques : vol et duplication.
+    - Solution : utiliser un composant de sécurité (ex. carte à puce) pour protéger les clés et prévenir les attaques.
+
+- Recommandations
+    - Utiliser un facteur de possession certifié (ex. ANSSI, Critères Communs).
+    - Si pas de composant de sécurité, protéger les secrets via chiffrement et restrictions d’accès (ex. Android Keystore, iOS Keychain).
+
+-----
+## Conclusion 
+*Cette documentaion permer de mieux comprendre les différents mécanismes de sécurité à mettre en place pour protéger les applications web. En appliquant des techniques comme la protection contre les attaques XSS, l'utilisation de la CSP, et la gestion des cookies ou du stockage local, on peut renforcer la sécurité des sites. on voit aussi l'importance de mettre en œuvre CORS et la Referrer-Policy pour mieux gérer la confidentialité et l'intégrité des données.Ces mesures doivent être intégrées dès le début du développement pour garantir une sécurité maximale.*
