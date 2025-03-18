@@ -97,9 +97,15 @@
 4. Menaces et attaques sur les facteurs de connaissance :
 
     |Menace|Protection|
-    |-----||----------|
-    | **Attaque par recherche exhaustive** L'attaquant teste toutes les combinaisons possibles de caractères.|Limiter le nombre d'essais|
+    |------|----------|
+    |**Attaque par recherche exhaustive** L'attaquant teste toutes les combinaisons possibles de caractères.|Limiter le nombre d'essais|
     |**Attaque par dictionnaire** L'attaquant teste les mots d'un dictionnaire pour deviner le mot de passe.|Mots de passe robustes, coffre-fort de mots de passe|
-    |**Attaque par tables pré-calculées** (`rainbow tables`) : Les attaquants comparent les empreintes cryptographiques volées avec une empreinte pré-calculée|Utilisation de sel aléatoire long|
-    |**Attaque par ingénierie sociale** : L'attaquant cherche à obtenir des informations sensibles par des moyens détournés, comme l'hameçonnage.|Authentification multifacteur|
+    |**Attaque par tables pré-calculées** (`rainbow tables`) Les attaquants comparent les empreintes cryptographiques volées avec une empreinte pré-calculée|Utilisation de sel aléatoire long|
+    |**Attaque par ingénierie sociale** L'attaquant cherche à obtenir des informations sensibles par des moyens détournés, comme l'hameçonnage.|Authentification multifacteur|
+
+5. Menaces et attaques sur les facteurs de possession
+Les menaces sur les facteurs de possession incluent le vol, la perte, ou la compromission de l'équipement contenant le facteur (ex: carte à puce). Les attaquants cherchent à récupérer des informations sensibles via des attaques par canaux auxiliaires.
+
+6. Menaces et attaques sur les facteurs inhérents
+Les facteurs biométriques sont également vulnérables à des attaques visant à usurper l'identité physique de l'utilisateur. Les attaques peuvent inclure la présentation de photos, vidéos préenregistrées, ou encore des moulages d'empreintes digitales.
     
