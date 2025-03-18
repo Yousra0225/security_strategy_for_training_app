@@ -8,7 +8,14 @@
 1. Same Origin Policy `(SOP)`.
 2. Cross-Origin Ressource Sharing `(CORS)`.
 ## Client Side 
-
+1. Composants :
+    - Page de Connexion/inscription
+        - Connexion
+        - Inscription
+        - Mot de passe oublié
+    - Tableau de Bord
+    - Formation
+2. Relations/Echange entre les composants
 ## Server Side
 ## Data Base
 
