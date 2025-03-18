@@ -119,3 +119,24 @@ Les facteurs biométriques sont également vulnérables à des attaques visant �
 8. Protocoles d’authentification forte :
     - Défi-réponse : Clé secrète + défi variable (ex. Kerberos..).
     - Résistance aux attaques : écoute clandestine, rejeu, MAN-IN-THE-MIDDLE.
+
+## les recommandations concernant le cycle de vie des facteurs d'authentification :
+|Création et renouvellement des facteurs d'authentification|Explication|
+|------|-----|
+|**Environnement contrôlé**|Les facteurs doivent être créés dans un environnement sécurisé. Par exemple, l'enregistrement d'une carte à puce pourrait se faire sur un poste déconnecté avec une remise en main propre pour vérification d'identité |
+|**Génération aléatoire**|Il est crucial d'utiliser des générateurs de nombres aléatoires robustes pour garantir la sécurité des éléments |
+|**Canaux sécurisés pour la remise**|Les facteurs doivent être remis à l'utilisateur via des canaux sécurisés. Si la remise se fait à distance, elle doit respecter des standards de sécurité, garantissant l'intégrité, l'authenticité et la confidentialité |
+|**Renouvelement**| Il est recommandé d'avoir un processus structuré de renouvellement des facteurs d'authentification, simplifiant la procédure tout en maintenant un contrôle de sécurité |
+
+## Transmission et utilisation des facteurs d'authentification
+1. **Eviter les SMS** : 
+*Le SMS n’est pas un canal sécurisé pour la transmission de facteurs d'authentification, car il peut être intercepté ou victime de l’attaque SIM swapping.*
+2. **Journalisation des événements** : 
+*Il est essentiel de conserver un historique des événements liés à l’authentification, permettant ainsi une détection d’anomalies ou de compromissions.*
+3. **Limiter les tentatives d’authentification** : 
+*Pour éviter les attaques par force brute, il est recommandé de limiter les tentatives d’authentification et de mettre en place un délai après plusieurs échecs.*
+4. **Utilisation de canaux sécurisés** : 
+*Tous les échanges contenant des secrets d'authentification doivent être réalisés via des canaux sécurisés tels que TLS.*
+- **Durée des sessions** : 
+*La durée des sessions authentifiées doit être limitée pour réduire les risques d'exploitation par un attaquant en cas de session compromise.*
+
