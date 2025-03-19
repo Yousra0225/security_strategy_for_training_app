@@ -15,12 +15,21 @@
         - Connexion
             1. ![Sécurisation du nom d’utilisateur ](src/username.md)
             2. ![Politique de mots de passe sécurisés](src/password.md)
-        - [Authentification](authentification)
-    - Tableau de Bord
+            3. Sécurisation du Formulaire d'Authentification
+        - Authentification
+    - Tableau de Bord : 
+        - Les roles
+        - Les actions
     - Formation
-2. Relations/Echange entre les composants
+        - Permissions (limitées)
+        - Protection contre les **scrapers**
+    - Mesure global pour sécurisé le coté client
 ## Partie Back-End
 ## Base de Données
+1. Relations/Echanges entre les composants
+    - Echange Front/back
+    - Echange  API/Data Base
+    ...
 
 
 
