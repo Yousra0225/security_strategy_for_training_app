@@ -1,7 +1,7 @@
 # Notes pour le Rapport
 ## Author : Yousra Chbib
 ## Projet de plateforme de formation :
-![Architecture](architecture.drawio.png)
+![Architecture](src/architecture.drawio.png)
 
 ## Notes à mettre dans le rapport : 
 ### Mesure et mécanisme de sécurité par défaut ou Global: 
@@ -13,10 +13,9 @@
 1. Composants :
     - Page de Connexion/inscription
         - Connexion
-            1. ![Sécurisation du nom d’utilisateur ](username.md)
-            2. ![Politique de mots de passe sécurisés](password.md)
-        - Inscription
-        - Mot de passe oublié
+            1. ![Sécurisation du nom d’utilisateur ](src/username.md)
+            2. ![Politique de mots de passe sécurisés](src/password.md)
+        - [Authentification](authentification)
     - Tableau de Bord
     - Formation
 2. Relations/Echange entre les composants
