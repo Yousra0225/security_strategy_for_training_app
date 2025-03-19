@@ -25,11 +25,20 @@
         - Protection contre les **scrapers**
     - Mesure global pour sécurisé le coté client
 ## Partie Back-End
-## Base de Données
-1. Relations/Echanges entre les composants
-    - Echange Front/back
-    - Echange  API/Data Base
-    ...
+1. Sécurisation des composants
+    - API
+    - Base de Données
+    - Gestion des Permissions
+    - Logs et Monitoring 
+    - Gestion des utilisateurs
+    - Stockage des fichiers
+## Sécurisation des échanges
+1. Echange Front/back
+    - Authentification
+    - Sessions 
+    - Protocol de communication
+    - Protection des requetes 
+    -  Validation des entrées
 
 
 
@@ -82,3 +91,6 @@ https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/technolog
 
 Choisir un bon mot de passe  
 https://cri.centrale-med.fr/fr/faq/choisir-un-bon-mot-passe
+
+Gestion des sessions d'authentication: 
+https://www.vaadata.com/blog/fr/comment-securiser-les-systemes-dauthentification-de-gestion-de-sessions-et-de-controle-dacces-de-vos-applications-web/
