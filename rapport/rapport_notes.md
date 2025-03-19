@@ -94,3 +94,6 @@ https://cri.centrale-med.fr/fr/faq/choisir-un-bon-mot-passe
 
 Gestion des sessions d'authentication: 
 https://www.vaadata.com/blog/fr/comment-securiser-les-systemes-dauthentification-de-gestion-de-sessions-et-de-controle-dacces-de-vos-applications-web/
+
+csp:
+https://www.writesoftwarewell.com/content-security-policy/
