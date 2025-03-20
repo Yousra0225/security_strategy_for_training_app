@@ -27,6 +27,11 @@
 ## Partie Back-End
 1. Sécurisation des composants
     - API
+        - Réception des requetes
+        - Authentification et validation
+        - Traitement des requetes
+        - Chiffrement des données
+        - Gesttion des sessions et des tokens
     - Base de Données
     - Gestion des Permissions
     - Logs et Monitoring 
