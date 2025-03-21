@@ -1,10 +1,11 @@
 ##L’île au trésor : 
-- Proposer une stratégie de sécurisation compléte pour une app de formation.
+- Proposer une stratégie de sécurisation compléte (presentation + pdf)pour une app de formation.
 - Convaincre les clients.
 
 ## Les Moteurs :
-- Une vision final inspirante 
-- Bon usage des outils : ia, recherche google, guides ..
+- Une vision final de la stratégie 
+- Bon usage des outils pour comprendre: ia, recherche google, guides ..
+- Bonne doc sur Github
 
 ## Les ancres : 
 - timing serré : le délais limité pour à la fois comprendre et rédiger une - -- - stratégie 
@@ -13,4 +14,5 @@
 
 - organisation(structure) du pdf
 - Session : gestion/stockage
+
 
